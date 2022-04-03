@@ -1,5 +1,14 @@
+import NewsletterComponent from "~/components/newsletter.component";
+import NavigationBarComponent from "~/components/navigationBar.component";
+import HeroComponent from "~/components/hero.component";
+
 export default function Index() {
-  return (
-      <h1> Welcome to Remix </h1>
-  );
+    return (
+        <div>
+            <NavigationBarComponent/>
+            <HeroComponent/>
+            <NewsletterComponent/>
+
+        </div>
+    );
 }
