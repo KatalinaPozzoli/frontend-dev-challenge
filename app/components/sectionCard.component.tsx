@@ -16,6 +16,7 @@ const SSectionCard = styled.section<{ backgroundColor: string, textColor: string
   align-items: center;
   justify-content: center;
   padding: 2.5em 1em;
+  box-sizing: border-box;
   background-color: ${(props) => props.backgroundColor};
   color: ${(props) => props.textColor};
 

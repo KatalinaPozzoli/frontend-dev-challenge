@@ -57,8 +57,7 @@ const HeroComponent = () => {
     return (
         <SHero>
             <ul className="hero__list">
-                {
-                    imagesBanner.map((heroNode, index) => (
+                {imagesBanner.map((heroNode, index) => (
                         <HeroItem
                             onClick={() => setPosition(position + 1)}
                             className="hero__list-item" key={`hero-node__${index}`}

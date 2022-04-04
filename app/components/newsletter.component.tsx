@@ -5,7 +5,7 @@ import InputComponent from "~/components/input.component";
 const SNewsletterComponent = styled.section`
   background-color: var(--primary-light);
   padding: 2.5em 1em;
-
+  box-sizing: border-box;
   .wr-newsletter {
     &__title {
       color: #191919;
@@ -20,7 +20,7 @@ const SNewsletterComponent = styled.section`
 
     &__input {
       margin-top: 1.5em;
-      width: 350px;
+      width: 100%;
     }
   }
 

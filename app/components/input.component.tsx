@@ -6,6 +6,7 @@ const SInputComponent = styled.section`
   justify-content: space-between;
   align-items: center;
   padding: 0.5em 1em;
+  box-sizing: border-box;
   border: 1px solid #555555;
   background-color: white;
   border-radius: 4px;
