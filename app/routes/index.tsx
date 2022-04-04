@@ -3,6 +3,7 @@ import NavigationBarComponent from "~/components/navigationBar.component";
 import HeroComponent from "~/components/hero.component";
 import SectionCardComponent, {CardContent} from "~/components/sectionCard.component";
 import TestimonialsComponent from "~/components/testimonialsComponent";
+import FooterComponent from "~/components/footer.component";
 
 const cards: CardContent[] = [
     {
@@ -35,10 +36,7 @@ export default function Index() {
             )}
             <TestimonialsComponent/>
             <NewsletterComponent/>
-            <footer>
-
-            </footer>
-
+            <FooterComponent/>
         </div>
     );
 }
