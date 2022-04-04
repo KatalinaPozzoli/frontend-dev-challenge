@@ -28,6 +28,10 @@ const STestimonials = styled.blockquote`
         justify-content: center;
         align-items: center;
       }
+      @media screen and (min-width: 1024px){
+        max-width: 1076px;
+        margin: 0 auto;
+      }
     }
     &__quote-icon {
       margin: 0;
