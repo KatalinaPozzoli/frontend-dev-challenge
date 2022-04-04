@@ -40,17 +40,24 @@ const SSectionCard = styled.section<{ backgroundColor: string, textColor: string
     &__text-container {
       display: flex;
       flex-direction: column;
-      max-width: 590px;
       text-align: center;
+      max-width: 590px;
       gap: 0.5em;
       @media screen and (min-width: 1024px) {
         text-align: left;
+        height: 430px;
+        justify-content: center;
       }
     }
 
     &__title {
-      font-size: 2em;
-      margin: 0;
+      font-size: 1.5em;
+      margin-top: 0.5em;
+      margin-bottom: 0;
+      @media screen and (min-width: 1024px) {
+        font-size: 2em;
+        margin: 0;
+      }
     }
 
     &__description-text {

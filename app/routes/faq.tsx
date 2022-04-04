@@ -38,23 +38,23 @@ const SFaq = styled.section`
 const faqs: FaqsContent[] = [
     {
         question: "¿Cómo funciona la consulta en línea?",
-        answer: ""
+        answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a purus quis purus condimentum venenatis vitae a erat. Ut luctus vulputate lorem, vitae consequat leo commodo nec."
     },
     {
         question: "¿Cómo funciona la plataforma?",
-        answer: ""
+        answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a purus quis purus condimentum venenatis vitae a erat. Ut luctus vulputate lorem, vitae consequat leo commodo nec."
     },
     {
         question: "¿Cuáles son los pasos para tomar una decisión?",
-        answer: ""
+        answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a purus quis purus condimentum venenatis vitae a erat. Ut luctus vulputate lorem, vitae consequat leo commodo nec."
     },
     {
         question: "Me da ansiedad pedir un turno",
-        answer: ""
+        answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     },
     {
         question: "Sobre los profesionales",
-        answer: ""
+        answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a purus quis purus condimentum venenatis vitae a erat. Ut luctus vulputate lorem, vitae consequat leo commodo nec.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a purus quis purus condimentum venenatis vitae a erat. Ut luctus vulputate lorem, vitae consequat leo commodo nec."
     }
 ]
 

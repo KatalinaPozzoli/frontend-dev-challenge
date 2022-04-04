@@ -30,11 +30,15 @@ const SInputComponent = styled.section`
   }
 `
 
+const sendForm = () => {
+    alert ('subscripción exitosa')
+}
+
 function InputComponent() {
     return (
         <SInputComponent>
-            <input className="wr-input" type="text" placeholder="Ingresa tu correo"/>
-            <button className="wr-input__button">
+            <input className="wr-input" type="email" placeholder="Ingresa tu correo" required/>
+            <button className="wr-input__button" onClick={sendForm}>
                 Subscribirse
             </button>
         </SInputComponent>
