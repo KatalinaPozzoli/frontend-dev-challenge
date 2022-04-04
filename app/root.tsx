@@ -2,6 +2,9 @@ import type {MetaFunction} from "@remix-run/node";
 import {Links, LiveReload, Meta, Outlet, Scripts, ScrollRestoration,} from "@remix-run/react";
 
 import coreStyles from '~/styles/core.css';
+import NavigationBarComponent from "~/components/navigationBar.component";
+import FooterComponent from "~/components/footer.component";
+import NewsletterComponent from "~/components/newsletter.component";
 
 export const meta: MetaFunction = () => ({
     charset: "utf-8",
@@ -34,7 +37,14 @@ export default function App() {
             }
         </head>
         <body>
+        <header>
+            <NavigationBarComponent/>
+        </header>
         <Outlet/>
+        <footer>
+            <NewsletterComponent/>
+            <FooterComponent/>
+        </footer>
         <ScrollRestoration/>
         <Scripts/>
         <LiveReload/>

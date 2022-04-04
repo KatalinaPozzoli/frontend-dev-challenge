@@ -1,9 +1,6 @@
-import NewsletterComponent from "~/components/newsletter.component";
-import NavigationBarComponent from "~/components/navigationBar.component";
 import HeroComponent from "~/components/hero.component";
 import SectionCardComponent, {CardContent} from "~/components/sectionCard.component";
 import TestimonialsComponent from "~/components/testimonialsComponent";
-import FooterComponent from "~/components/footer.component";
 
 const cards: CardContent[] = [
     {
@@ -28,17 +25,12 @@ const cards: CardContent[] = [
 
 export default function Index() {
     return (
-        <div>
-            <header>
-                <NavigationBarComponent/>
-            </header>
+        <>
             <HeroComponent/>
             {cards.map((card)=>
                 <SectionCardComponent card={card}/>
             )}
             <TestimonialsComponent/>
-            <NewsletterComponent/>
-            <FooterComponent/>
-        </div>
+        </>
     );
 }
