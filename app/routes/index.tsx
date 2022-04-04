@@ -23,14 +23,44 @@ const cards: CardContent[] = [
     }
 ]
 
+const Banners = [
+    {
+        image: "/assets/image-1.png",
+        title: "Vive el ahora, disfruta cada momento",
+    },
+    {
+        image: "/assets/image-2.png",
+        title: "Tu primer paso hacia el bienestar emocional",
+    },
+    {
+        image: "/assets/image-3.png",
+        title: "Conviértete en la persona que quieres ser",
+    }
+]
+
+const Testimonials = [
+    {
+        quote: "Me gustaría agradecer al sitio, me ayudó de una manera inimaginable, el psicólogo fue sumamente servicial y acogedor conmigo y me siento mejor conmigo mismo",
+        author: "~ Maria Montessori ~"
+    },
+    {
+        quote: "En lo personal opino que es una excelente aplicación, la psicologa que me atendió fue como una amiga que nos ayuda a sentirnos mejor, que nos apoya y nos escucha, me ha ayudado mucho, excelente servicio",
+        author: "~ Raquel Rodríguez ~"
+    },
+    {
+        quote: "Me ha ayudado bastante con los pensamientos que llegó a tener, estaba a punto de rendirme, y luego conocí la app,  he mejorado mi perspectiva de vida y de todo",
+        author: "~ Julian Gomez ~"
+    }
+]
+
 export default function Index() {
     return (
         <>
-            <HeroComponent/>
-            {cards.map((card)=>
-                <SectionCardComponent card={card}/>
+            <HeroComponent banners={Banners}/>
+            {cards.map((card, index) =>
+                <SectionCardComponent card={card} key={index}/>
             )}
-            <TestimonialsComponent/>
+            <TestimonialsComponent testimonials= {Testimonials}/>
         </>
     );
 }

@@ -59,12 +59,10 @@ const SNavigationBar = styled.nav`
         display: none;
 
         &--opened {
-          margin: 0;
           padding: 1em;
           box-sizing: border-box;
           display: flex;
           flex-direction: column;
-          list-style: none;
           gap: 1em;
 
           @media screen and (min-width: 1024px) {
@@ -91,6 +89,7 @@ const SNavigationBar = styled.nav`
   }
 
 `
+
 const menuSections = [
     {
         label: 'Inicio',
@@ -118,13 +117,13 @@ const NavigationBarComponent = () => {
                 <button className="nav-bar__menu-icon" onClick={() => setOpened(!opened)}>
                     <img
                         className={`nav-bar__hamburger-menu-icon ${opened ? 'nav-bar__hamburger-menu-icon--opened' : ''}`}
-                        src={HamburgerMenu} alt="Hamburger Menu Icon"/>
+                        src={HamburgerMenu} alt="open navigation menu"/>
                     <img className={`nav-bar__close-menu-icon ${opened ? 'nav-bar__close-menu-icon--opened' : ''}`}
-                         src={CloseHamburgerMenu} alt="Close Menu Icon"/>
+                         src={CloseHamburgerMenu} alt="close navigation menu"/>
                 </button>
                 <img className="nav-bar__brand-logo" src={BrandLogo} alt="Brand Logo"/>
                 <button className="nav-bar__search-button">
-                    <img src={SearchMenu} alt="Search Icon"/>
+                    <img src={SearchMenu} alt="Search"/>
                 </button>
             </div>
             <ul className={`nav-bar-sections__container ${opened ? 'nav-bar-sections__container--opened' : ''}`}>

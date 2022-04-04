@@ -58,9 +58,6 @@ const SFooter = styled.footer`
     }
 
     &__terms-politics-list {
-      list-style: none;
-      margin: 0;
-      padding: 0;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -82,7 +79,9 @@ const SFooter = styled.footer`
   }
 
 `
+
 const politics = ["Política de Cookies", "Política de Privacidad", "Términos y condiciones de uso", "Cláusula Informativa de Consentimiento"]
+
 const FooterComponent = () => {
     return (
         <SFooter>

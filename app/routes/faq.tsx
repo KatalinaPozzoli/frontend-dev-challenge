@@ -35,6 +35,7 @@ const SFaq = styled.section`
     }
   }
 `
+
 const faqs: FaqsContent[] = [
     {
         question: "¿Cómo funciona la consulta en línea?",
