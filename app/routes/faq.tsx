@@ -60,7 +60,7 @@ const faqs: FaqsContent[] = [
 
 const Faq = () => {
     return (
-        <SFaq>
+        <SFaq id="#faq">
             <h1 className="faq__title"> ¿Cómo podemos ayudarte? </h1>
             <div className="faq__card-container">
                 {faqs.map((faqInfo, index)=>(

@@ -59,7 +59,7 @@ const SNewsletterComponent = styled.section`
 
 const NewsletterComponent = () => {
     return (
-        <SNewsletterComponent className="newsletter">
+        <SNewsletterComponent className="newsletter" id="newsletter">
             <div className="newsletter__container">
                 <img className="newsletter__image" src={newsLetterImage} alt="A person with a message in an iPad illustration"/>
                 <div className="newsletter__text-container">

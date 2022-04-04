@@ -70,7 +70,7 @@ const testimonials = [
 const TestimonialsComponent = () => {
     const [position, setPosition] = useState(0)
     return (
-        <STestimonials>
+        <STestimonials  id="testimonials">
             <ul className="testimonial__list">
                 {testimonials.map((testimonial, index) => (
                     <TestimonialItem onClick={() => setPosition(position + 1)}
