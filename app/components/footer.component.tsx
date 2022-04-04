@@ -38,7 +38,7 @@ const SFooter = styled.footer`
     }
 
     &__description-text {
-      font-size: 0.7em;
+      font-size: 0.8em;
       width: 100%;
       text-align: center;
       @media screen and (min-width: 1024px) {
